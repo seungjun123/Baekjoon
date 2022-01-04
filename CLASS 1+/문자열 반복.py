@@ -6,4 +6,5 @@ for i in range(n):
     num = int(num)
     for j in range(len(temp)):
         text += temp[j]*num
+        
     print(text)
