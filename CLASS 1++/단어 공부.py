@@ -1,12 +1,11 @@
-S = input().upper()
-SS = list(set(S))
+s = input().upper()
+ss = list(set(s))
+cnt = []
 
-cnt_list = []
-for i in SS:
-    cnt = S.count(i)
-    cnt_list.append(cnt)
+for i in ss:
+    cnt.append(s.count(i))
 
-if(cnt_list.count(max(cnt_list)) > 1):
+if(cnt.count(max(cnt)) > 1):
     print("?")
 else:
-    print(SS[cnt_list.index(max(cnt_list))])
+    print(ss[cnt.index(max(cnt))])
